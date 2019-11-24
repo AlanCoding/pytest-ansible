@@ -120,7 +120,7 @@ setup(
     zip_safe=False,
     tests_require=['tox'],
     # setup_requires=['pypandoc<1.2.0', 'setuptools-markdown'],
-    setup_requires=['setuptools-markdown'],
+    setup_requires=['wheel', 'setuptools-markdown'],
     install_requires=['ansible', 'pytest'],
     cmdclass={
         'test': ToxTestCommand,
